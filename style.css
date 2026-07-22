@@ -243,3 +243,142 @@ text-decoration:none;
 
 
 }
+/* 音乐区域 */
+
+.music-box{
+
+background:rgba(255,255,255,0.85);
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+text-align:center;
+
+}
+
+
+
+/* 小王子封面 */
+
+#cover{
+
+animation:float 3s infinite ease-in-out;
+
+}
+
+
+
+#cover img{
+
+width:260px;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+box-shadow:0 0 30px #ffd966;
+
+}
+
+
+
+/* 漂浮动画 */
+
+@keyframes float{
+
+
+0%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* 播放文字 */
+
+#now{
+
+font-size:18px;
+
+color:#666;
+
+margin:20px;
+
+}
+
+
+
+/* 歌曲列表 */
+
+
+.music-box ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+
+
+.music-box li{
+
+
+background:#fff;
+
+
+margin:12px;
+
+
+padding:15px;
+
+
+border-radius:20px;
+
+
+cursor:pointer;
+
+
+transition:0.3s;
+
+
+font-size:18px;
+
+
+}
+
+
+
+.music-box li:hover{
+
+
+background:#ffe9a8;
+
+
+transform:scale(1.05);
+
+
+}
