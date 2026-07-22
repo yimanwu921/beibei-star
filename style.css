@@ -495,3 +495,71 @@ opacity:0;
 
 
 }
+/* 鼠标星尘 */
+
+
+.mouse-star{
+
+
+position:absolute;
+
+
+width:8px;
+
+height:8px;
+
+
+background:#ffd86b;
+
+
+border-radius:50%;
+
+
+box-shadow:
+
+0 0 15px #fff;
+
+
+animation:
+
+starFade 1s linear;
+
+
+pointer-events:none;
+
+
+z-index:999;
+
+
+
+}
+
+
+
+@keyframes starFade{
+
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+
+100%{
+
+transform:
+
+scale(0);
+
+translateY(-40px);
+
+
+opacity:0;
+
+}
+
+
+}
