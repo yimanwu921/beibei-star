@@ -93,3 +93,39 @@ meteor.remove();
 setInterval(createMeteor,1000);
 
 createMeteor();
+// =================
+// 鼠标星尘效果
+// =================
+
+
+document.addEventListener(
+"mousemove",
+function(e){
+
+
+let star=document.createElement("div");
+
+
+star.className="mouse-star";
+
+
+star.style.left=e.pageX+"px";
+
+star.style.top=e.pageY+"px";
+
+
+document.body.appendChild(star);
+
+
+
+setTimeout(()=>{
+
+
+star.remove();
+
+
+},1000);
+
+
+
+});
