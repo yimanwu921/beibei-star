@@ -1,177 +1,54 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
+let songs=[
 
-<head>
+"https://higequ.com/player/15195332/",
 
-<meta charset="UTF-8">
+"https://higequ.com/player/321260769/",
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+"https://higequ.com/player/1245657/",
 
-<title>
-贝贝的星球
-</title>
+"https://higequ.com/player/51648461/",
 
+"https://higequ.com/player/83765010/"
 
-<link rel="stylesheet" href="style.css">
+];
 
-</head>
 
+let names=[
 
-<body>
+"光年之外",
 
+"唯一",
 
-<header>
+"泡沫",
 
+"倒数",
 
-<!-- 小王子动态图片 -->
+"句号"
 
-<img 
-class="prince"
-src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg"
->
+];
 
 
-<h1>
-✨ 贝贝的星球 ✨
-</h1>
+let player=document.getElementById("musicPlayer");
 
+let cover=document.getElementById("cover");
 
-<p>
-欢迎来到属于贝贝的小宇宙
-</p>
+let now=document.getElementById("now");
 
 
-</header>
 
+function playMusic(index){
 
 
+cover.style.display="none";
 
 
-<div class="container">
+player.style.display="block";
 
 
-<!-- 音乐栏目 -->
+player.src=songs[index];
 
-<section class="music-box">
 
+now.innerHTML="🎵 当前播放："+names[index];
 
-<h2>
-🎵 贝贝的音乐空间
-</h2>
 
-
-<!-- 默认小王子图片 -->
-
-<div id="cover">
-
-<img src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg">
-
-<p>
-🌹 等待音乐响起...
-</p>
-
-</div>
-
-
-
-<!-- 播放器 -->
-
-<iframe
-
-id="musicPlayer"
-
-width="100%"
-
-height="450"
-
-frameborder="0"
-
-style="display:none;">
-
-</iframe>
-
-
-<p id="now">
-
-当前播放：暂无
-
-</p>
-
-
-
-<ul>
-
-
-<li onclick="playMusic(0)">
-🌟 光年之外
-</li>
-
-
-<li onclick="playMusic(1)">
-🌙 唯一
-</li>
-
-
-<li onclick="playMusic(2)">
-✨ 泡沫
-</li>
-
-
-<li onclick="playMusic(3)">
-⭐ 倒数
-</li>
-
-
-<li onclick="playMusic(4)">
-🌹 句号
-</li>
-
-
-</ul>
-
-
-</section>
-
-<h2>
-🌌 贝贝的星空世界
-</h2>
-
-
-
-<p>
-送给亲爱哒的21岁星球(*/ω＼*)：
-       💕**远看是星，近看是辰，不论远近，贝贝是嫚眼里唯一的星辰大海**💕
-</p>
-
-
-
-<a 
-
-href="http://111.228.38.40:9999/stars.html"
-
-target="_blank"
-
-class="button">
-
-进入贝贝的星空
-
-
-</a>
-
-
-</section>
-
-
-
-</div>
-
-
-
-
-<script src="script.js"></script>
-
-
-</body>
-
-
-</html>
+}
