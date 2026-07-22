@@ -1,95 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-let songs=[
+<head>
 
+<meta charset="UTF-8">
 
-"music/光年之外.mp3",
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-"music/唯一.mp3",
-
-"music/泡沫.mp3",
-
-"music/倒数.mp3",
-
-"music/句号.mp3"
-
-
-];
+<title>
+贝贝的星球
+</title>
 
 
-let names=[
+<link rel="stylesheet" href="style.css">
+
+</head>
 
 
-"光年之外",
-
-"唯一",
-
-"泡沫",
-
-"倒数",
-
-"句号"
+<body>
 
 
-];
+<header>
 
 
+<!-- 小王子动态图片 -->
 
-let audio=document.getElementById("audio");
-
-
-let now=document.getElementById("now");
-
-
-
-let index=0;
+<img 
+class="prince"
+src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg"
+>
 
 
-
-function playMusic(i){
-
-
-index=i;
+<h1>
+✨ 贝贝的星球 ✨
+</h1>
 
 
-audio.src=songs[i];
+<p>
+欢迎来到属于贝贝的小宇宙
+</p>
 
 
-now.innerHTML=
-
-"正在播放："+names[i];
-
-
-audio.play();
-
-
-}
+</header>
 
 
 
 
-// 播放结束随机下一首
 
-audio.onended=function(){
-
-
-let next;
+<div class="container">
 
 
-do{
+<!-- 音乐栏目 -->
+
+<section class="music-box">
 
 
-next=Math.floor(
-Math.random()*songs.length
-);
+<h2>
+🎵 贝贝的音乐空间
+</h2>
 
 
-}
+<!-- 默认小王子图片 -->
 
-while(next==index);
+<div id="cover">
+
+<img src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg">
+
+<p>
+🌹 等待音乐响起...
+</p>
+
+</div>
 
 
 
-playMusic(next);
+<!-- 播放器 -->
+
+<iframe
+
+id="musicPlayer"
+
+width="100%"
+
+height="450"
+
+frameborder="0"
+
+style="display:none;">
+
+</iframe>
 
 
-}
+<p id="now">
+
+当前播放：暂无
+
+</p>
+
+
+
+<ul>
+
+
+<li onclick="playMusic(0)">
+🌟 光年之外
+</li>
+
+
+<li onclick="playMusic(1)">
+🌙 唯一
+</li>
+
+
+<li onclick="playMusic(2)">
+✨ 泡沫
+</li>
+
+
+<li onclick="playMusic(3)">
+⭐ 倒数
+</li>
+
+
+<li onclick="playMusic(4)">
+🌹 句号
+</li>
+
+
+</ul>
+
+
+</section>
+
+<h2>
+🌌 贝贝的星空世界
+</h2>
+
+
+
+<p>
+送给亲爱哒的21岁星球(*/ω＼*)：
+       💕**远看是星，近看是辰，不论远近，贝贝是嫚眼里唯一的星辰大海**💕
+</p>
+
+
+
+<a 
+
+href="http://111.228.38.40:9999/stars.html"
+
+target="_blank"
+
+class="button">
+
+进入贝贝的星空
+
+
+</a>
+
+
+</section>
+
+
+
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+
+</html>
