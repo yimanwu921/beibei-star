@@ -382,3 +382,116 @@ transform:scale(1.05);
 
 
 }
+.page{
+
+animation:
+
+pageIn 2s;
+
+}
+
+
+@keyframes pageIn{
+
+
+from{
+
+opacity:0;
+
+transform:scale(1.05);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+}
+/* ================= */
+/* 流星效果 */
+/* ================= */
+
+
+.meteor{
+
+
+position:fixed;
+
+top:0;
+
+
+width:4px;
+
+height:150px;
+
+
+background:
+
+linear-gradient(
+transparent,
+white
+);
+
+
+box-shadow:
+
+0 0 20px white;
+
+
+transform:
+
+rotate(45deg);
+
+
+z-index:999;
+
+
+animation:
+
+meteorMove 2s linear forwards;
+
+
+}
+
+
+
+@keyframes meteorMove{
+
+
+from{
+
+
+transform:
+
+translate(0,0)
+rotate(45deg);
+
+
+opacity:1;
+
+
+}
+
+
+to{
+
+
+transform:
+
+translate(-400px,600px)
+rotate(45deg);
+
+
+opacity:0;
+
+
+}
+
+
+}
