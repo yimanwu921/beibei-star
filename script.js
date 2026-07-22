@@ -52,3 +52,44 @@ now.innerHTML="🎵 当前播放："+names[index];
 
 
 }
+// =================
+// 流星生成
+// =================
+
+
+function createMeteor(){
+
+
+let meteor=document.createElement("div");
+
+
+meteor.className="meteor";
+
+
+meteor.style.left =
+Math.random()*window.innerWidth+"px";
+
+
+meteor.style.top =
+"-100px";
+
+
+document.body.appendChild(meteor);
+
+
+
+setTimeout(()=>{
+
+meteor.remove();
+
+},2000);
+
+
+}
+
+
+// 每隔一段时间出现流星
+
+setInterval(createMeteor,1000);
+
+createMeteor();
