@@ -19,6 +19,10 @@
 
 <body class="page">
 
+<canvas id="nebulaCanvas"></canvas>
+
+<canvas id="starCanvas"></canvas>
+
 <!-- 流星背景 -->
 <div class="meteor-box"></div>
 <script>
@@ -38,7 +42,7 @@ window.location.href="login.html";
 
 <img 
 class="prince"
-src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg"
+src="green-rose.jpg"
 >
 
 
@@ -75,10 +79,10 @@ src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jp
 
 <div id="cover">
 
-<img src="https://bcn.135editor.com/files/users/559/5595074/202109/84d9b722_N8bjbG.jpg">
+<img src="fox.jpg">
 
 <p>
-🌹 等待音乐响起...
+愚蠢的余豆子静静-- 等待音乐响起...hh
 </p>
 
 </div>
@@ -104,7 +108,7 @@ style="display:none;">
 
 <p id="now">
 
-当前播放：暂无
+当前播放：暂无--余子豆？！怎么还不为朕奏乐（︶^︶）
 
 </p>
 
@@ -169,17 +173,89 @@ class="button">
 
 </a>
 
+<!-- 萤火虫草地模块 -->
 
-</section>
+<section class="firefly-world">
 
+
+<div class="moon"></div>
+<!-- 小王子剪影 -->
+
+<div 
+class="little-prince"
+onclick="showPrinceStory()">
+
+
+<img src="prince.png">
+
+
+<div id="princeStory">
+
+</div>
 
 
 </div>
 
 
+<!-- 玫瑰 -->
+
+<div class="rose" onclick="showRoseMessage()">
+
+
+🌹
+
+
+<div id="roseText">
+
+</div>
+
+
+</div>
+
+
+<h2>
+🌿 贝贝的秘密草地😘
+</h2>
+
+
+<p>
+夜晚的草地里，也藏着属于贝贝的小星光 ✨
+</p>
+
+
+<div id="grass" class="grass"></div>
+
+
+<div id="fireflies">
+
+</div>
+
+
+
+</section>
+</section>
+
+
+
+</div>
+<section class="rose-garden">
+
+
+<h2>
+💞 贝贝的玫瑰花园🥰
+</h2>
+
+
+<div id="roses"></div>
+
+
+</section>
+
 
 
 <script src="script.js"></script>
+<script src="star.js"></script>
+<script src="nebula.js"></script>
 
 
 </body>
